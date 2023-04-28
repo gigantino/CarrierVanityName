@@ -1,4 +1,4 @@
-package gay.nullby.carriername
+package dev.gigantino.carriername
 
 import org.junit.Test
 

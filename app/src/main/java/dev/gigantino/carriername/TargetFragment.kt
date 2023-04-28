@@ -1,4 +1,4 @@
-package gay.nullby.carriername
+package dev.gigantino.carriername
 
 import android.content.Context
 import android.os.Bundle
@@ -18,7 +18,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
 import com.android.internal.telephony.ICarrierConfigLoader
-import gay.nullby.carriername.databinding.FragmentTargetBinding
+import dev.gigantino.carriername.databinding.FragmentTargetBinding
 import rikka.shizuku.ShizukuBinderWrapper
 
 class TargetFragment : Fragment() {
@@ -81,7 +81,6 @@ class TargetFragment : Fragment() {
         var p = PersistableBundle();
         p.putBoolean(CarrierConfigManager.KEY_CARRIER_NAME_OVERRIDE_BOOL, true)
         p.putString(CarrierConfigManager.KEY_CARRIER_NAME_STRING, text)
-        p.putString(CarrierConfigManager.KEY_CARRIER_CONFIG_VERSION_STRING, /* trans rights! 🏳️‍⚧️*/ ":3")
         val subId: Int;
         if (selectedSub == 1) {
             subId = subId1!!
